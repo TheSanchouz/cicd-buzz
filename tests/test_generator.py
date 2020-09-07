@@ -21,10 +21,3 @@ def test_sample_multiple_words():
 def test_generate_buzz_of_at_least_five_words():
     phrase = generator.generate_buzz()
     assert len(phrase.split()) >= 5
-
-
-@pytest.hookimpl()
-def test_generate_word():
-    l = ('foo', 'bar', 'foobar')
-    word = generator.sample(l)
-    print(word)
