@@ -1,7 +1,7 @@
 language: python
 
 env:
-  - CODECOV_TOKEN=
+  - CODECOV_TOKEN="65f5a155-ec43-4e64-8e76-7ef95477f7cf"
 
 jobs:
   include:
