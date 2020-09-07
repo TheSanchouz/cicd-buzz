@@ -11,4 +11,4 @@ jobs:
       script:
         - python -m pytest -v
       after_success:
-        - codecov
+        - bash <(curl -s https://codecov.io/bash)
