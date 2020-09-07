@@ -11,4 +11,4 @@ jobs:
       os: windows
       language: shell
 script:
-  - python -m pytest -v
+  - pytest
