@@ -1,15 +1,12 @@
 language: python
+python:
+  - "3.6"
 
-env:
-  - CODECOV_TOKEN="65f5a155-ec43-4e64-8e76-7ef95477f7cf"
+install:
+    pip install -r requirements.txt
 
-jobs:
-  include:
-    - name: "Python 3.7 on Xenial Linux"
-      os: linux
-      python: 3.7
-      script:
-        - python -m pytest -v
-        - coverage run -m unittest discover
-      after_success:
-        - bash <(curl -s https://codecov.io/bash)
+script:
+    - pytest -v
+
+after_success:
+    - codecov
