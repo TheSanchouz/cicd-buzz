@@ -9,6 +9,6 @@ jobs:
       language: shell
     - name: "Python 3.7 on Windows"
       os: windows
-      language: shell
+      language: sh
 script:
   - python -m pytest -v
