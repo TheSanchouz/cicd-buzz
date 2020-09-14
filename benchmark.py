@@ -9,4 +9,5 @@ def test_stdout_random_sample():
 
 
 if __name__ == '__main__':
-    test_stdout_random_sample()
+    for i in range(5):
+        test_stdout_random_sample()

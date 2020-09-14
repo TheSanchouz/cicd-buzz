@@ -18,5 +18,5 @@ script:
     - python -m pytest -v
 
 after_success:
-    - python benchmark/bench_generator.py
+    - python bench_generator.py
     - codecov
