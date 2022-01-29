@@ -23,4 +23,5 @@ def generate_buzz():
 
 
 if __name__ == "__main__":
+    i = 1
     print(generate_buzz())
