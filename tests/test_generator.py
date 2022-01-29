@@ -2,9 +2,9 @@ from buzz import generator
 
 
 def test_sample_single_word():
-    l = ('foo', 'bar', 'foobar')
-    word = generator.sample(l)
-    assert word in l
+    words = ('foo', 'bar', 'foobar')
+    word = generator.sample(words)
+    assert word in words
 
 
 def test_sample_multiple_words():
